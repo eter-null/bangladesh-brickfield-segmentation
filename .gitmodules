@@ -1,6 +1,3 @@
-[submodule "semivl"]
-	path = semivl
-	url = https://github.com/eter-null/semivl.git
 [submodule "SemiVL_Brickfield/semivl"]
 	path = SemiVL_Brickfield/semivl
 	url = https://github.com/eter-null/semivl.git

@@ -42,6 +42,21 @@ python -m torch.distributed.launch \
 - Multi-node: Use actual IP addresses for `--master_addr`
 - Fresh training: Remove `--resume-from` parameter
 
+## Model Evaluation (SemiVL)
+```bash
+# Evaluate trained model
+python -m third_party.unimatch.eval \
+    --config <config_path> \
+    --save-path <checkpoint_path> \
+    --pred-path <prediction_output_path>
+
+# Example
+python -m third_party.unimatch.eval \
+    --config exp/experiment/config.yaml \
+    --save-path exp/experiment/best.pth \
+    --pred-path prediction_outputs
+```
+
 ## TensorBoard Visualization
 ```bash
 # Start TensorBoard to view training logs
